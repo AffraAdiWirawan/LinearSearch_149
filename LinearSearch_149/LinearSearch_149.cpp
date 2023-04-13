@@ -28,7 +28,7 @@ void input() {
 
 void LinearSearch() {
 	char ch;
-	int ctr; 
+	int ctr;
 
 	do
 	{
@@ -39,6 +39,12 @@ void LinearSearch() {
 		ctr = 0;
 		for (i = 0; i < n; i++)
 		{
+			ctr++;
+			if (arr[i] == item)
+			{
+				cout << "\n" << item << "found at position" << (i + 1) << endl;
+				break;
+			}
 		}
-	}
+	} 
 }
